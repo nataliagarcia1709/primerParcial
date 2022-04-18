@@ -1,17 +1,17 @@
 
-if(localStorage.getItem("cod")==null) {
+if(localStorage.getItem("codigo")==null) {
     window.location.href="index.html";
   }
   
   
-  var data = localStorage.getItem('name');
-  document.getElementById('name').innerHTML = data;
+  var data = localStorage.getItem('nombre');
+  document.getElementById('nombre').innerHTML = data;
   var data = localStorage.getItem('codigo');
-  document.getElementById('cod').innerHTML = data;
+  document.getElementById('codigo').innerHTML = data;
   
   document.getElementById("cerrar").onclick = function() {
-    localStorage.removeItem('cod');
-    localStorage.removeItem('pwd');
+    localStorage.removeItem('codigo');
+    localStorage.removeItem('clave');
   
     window.location.href="index.html";
   }
